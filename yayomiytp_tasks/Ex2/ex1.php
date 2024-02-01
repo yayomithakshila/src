@@ -48,6 +48,6 @@ include 'header.php';
     <img src="image/ex1_3.4.png" alt="web development environment" width=1000px height=200px>
 
     
-</body>
+    </body>
 </html>
 <?php include 'footer.php'; ?>
