@@ -1,0 +1,134 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: #fff;
+    background-image: url('image/beach.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+}
+
+.header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    font-style: normal;
+    font-size: xx-large;
+}
+
+.logo img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 15px;
+    color: rgb(10, 10, 10);
+    font-weight: 20;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: aliceblue;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.section {
+    position: relative; /* Change absolute to relative */
+    width: 100%; /* Adjust width to fill its parent container */
+    height: 100vh; /* Set height to fill the viewport */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: rgba(74, 63, 63, 0.5);
+}
+.section h1 {
+    text-align: left;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    z-index: 1;
+    color: white;
+}
+
+.section h3 {
+    text-align: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    z-index: 1;
+}
+
+.footer {
+    background: #000000;
+    color: #fff;
+}
+
+/*.........../*
+
+ /* Style inputs */
+ input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  body {
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.container {
+    min-height: 100vh; /* Expand container to at least the height of the viewport */
+}
+
+
+.footer {
+    position: relative; /* Change position to relative */
+    width: 100%;
+    height: auto;
+    margin-top: 20px; /* Adjust margin top as needed */
+}
+
+
+
