@@ -1,5 +1,5 @@
 <?php 
- $Title = "Exercise 2: Create universal header, footer, or sidebar as per your layout done in the previous course.";
+ $title = "Exercise 2: Create universal header, footer, or sidebar as per your layout done in the previous course.";
  include 'header.php'; ?>   
         
        

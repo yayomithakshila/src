@@ -1,6 +1,6 @@
 
 <?php
-$Title = "Exercise 1: Getting Started with PHP";
+$title = "Exercise 1: Getting Started with PHP";
 include 'header.php';
 ?>
 
