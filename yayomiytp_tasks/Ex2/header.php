@@ -25,7 +25,7 @@
                     <nav class="navbar">
                         <a href="ex1.php">Exercise1</a>
                         <a href="ex2.php">Exercise2</a>
-                        <a href="">Exercise3</a>
+                        <a href="ex3.php">Exercise3</a>
                         <a href="">Exercise4</a>
                         <a href="">Exercise5</a>
                         <a href="">Exercise7</a>

@@ -20,6 +20,22 @@
                         <img src="image/icon/phone_.png" alt="" style="background-color: aliceblue;width: 30px; height: 30px; margin-right: 10px;" >+94719669291</p>
                         <p> <img src="image/icon/email_ (1).png" style="background-color: aliceblue;width: 30px; height: 30px; margin-right: 10px;" alt="">kingcocovilla@gmail.com</p>
                     </h5>
+
+
+
+                    <?php
+            $file_path = $_SERVER['DOCUMENT_ROOT'] .  $_SERVER['REQUEST_URI'];
+            $file_name = basename($file_path);
+            $file_name = basename($file_path);
+            $last_modified_timestamp = filemtime($file_path);
+            $last_modified_date = date("F j, Y, g:i a", $last_modified_timestamp);
+            echo "<p>Last modified on : $last_modified_date</p>";
+            ?>
+            
+
+
+
+
                 </div>
             </div>
         </div> <!--footer-->
