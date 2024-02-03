@@ -52,7 +52,7 @@ Not August, this is Month-name so I don't have any holidays</h4>
 $currentMonth = date('F');
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Check if the 'month' key exists in $_POST array
+   
     if (isset($_POST["month"])) {
         $inputMonth = $_POST["month"];
 
@@ -79,15 +79,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Check if the 'number' key exists in $_POST array
+    
     if (isset($_POST['multiply_number'])) {
-        // Get the input from the form
+        
         $multiply_number = $_POST['multiply_number'];
 
-        // Convert the input to an integer
+        
         $multiply_number = intval($multiply_number);
 
-        // Generate the multiplication table
+        
         echo "<h2>Multiplication Table of $multiply_number:</h2>";
         echo "<table class='table'>";
         echo "<thead><tr><th>Multiplier</th><th>Result</th></tr></thead>";
@@ -116,18 +116,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Check if the 'number' key exists in $_POST array
+    
     if (isset($_POST['number'])) {
-        // Get the input from the form
+        
         $number = $_POST['number'];
 
-        // Convert the input to an integer
+        
         $number = intval($number);
 
-        // Initialize counter
+        
         $i = 1;
 
-        // Print numbers from 1 to $number using a while loop
+       
         
         echo "<ul>";
         while ($i <= $number) {
