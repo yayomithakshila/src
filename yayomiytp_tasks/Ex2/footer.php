@@ -24,13 +24,11 @@
 
 
                     <?php
-            $file_path = $_SERVER['DOCUMENT_ROOT'] .  $_SERVER['REQUEST_URI'];
-            $file_name = basename($file_path);
-            $file_name = basename($file_path);
-            $last_modified_timestamp = filemtime($file_path);
-            $last_modified_date = date("F j, Y, g:i a", $last_modified_timestamp);
-            echo "<p>Last modified on : $last_modified_date</p>";
-            ?>
+    $current_file_name = basename($_SERVER['PHP_SELF']);
+    echo "File Name: " . $current_file_name . "<br>";
+    $file_last_modified = filemtime(__FILE__);
+    echo "Last modified: " . date("F d Y H:i:s.", $file_last_modified);
+?>
             
 
 

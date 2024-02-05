@@ -11,7 +11,7 @@ include 'header.php';
 
   <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
   Name: <input type="text" name="name"aria-label="Name" class="form-control"> <br><br>
-  Age: <input type="text" name="age"aria-label="Age" class="form-control"> <br><br>
+  Age: <input type="number" name="age"aria-label="Age" class="form-control"> <br><br>
   <input type="submit" value="submit">
 </form>
 

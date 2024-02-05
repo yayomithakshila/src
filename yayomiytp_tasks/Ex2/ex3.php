@@ -96,19 +96,25 @@ echo "Sum:" . $sum;
 
 <h4>3.7 Browser Detection: Write a PHP script to detect the browser being used to view your pages. Hint: Use predefined variables: $_SERVER</h4>
 
-<?php
-echo $_SERVER['PHP_SELF'];
-echo "<br>";
-echo $_SERVER['SERVER_NAME'];
-echo "<br>";
-echo $_SERVER['HTTP_HOST'];
-echo "<br>";
-echo $_SERVER['HTTP_REFERER'];
-echo "<br>";
-echo $_SERVER['HTTP_USER_AGENT'];
-echo "<br>";
-echo $_SERVER['SCRIPT_NAME'];
-?>
+<?php 
+                        $user_agent = $_SERVER['HTTP_USER_AGENT'];
+
+                        if (preg_match('/Firefox/i', $user_agent)) {
+                            $browser = 'Mozilla Firefox';
+                        } elseif (preg_match('/MSIE/i', $user_agent)) {
+                            $browser = 'Internet Explorer';
+                        } elseif (preg_match('/Chrome/i', $user_agent)) {
+                            $browser = 'Google Chrome';
+                        } elseif (preg_match('/Safari/i', $user_agent)) {
+                            $browser = 'Apple Safari';
+                        } elseif (preg_match('/Opera/i', $user_agent)) {
+                            $browser = 'Opera';
+                        } else {
+                            $browser = 'Unknown';
+                        }
+
+                        echo "<h4>Detected browser: $browser</h4>";
+                    ?>
  <?php include 'footer.php'; ?>
 
 
