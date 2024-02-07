@@ -34,7 +34,7 @@ if ($result->num_rows > 0) {
                 <td>{$row['first_name']}</td>
                 <td>{$row['last_name']}</td>
                 <td>{$row['city']}</td>
-                <td>{$row['groupId']}</td>
+                <td>{$row['groupid']}</td>
                 <td>
                     <a href='updatesingle.php?id={$row['id']}' class='btn btn-primary btn-sm'>Update</a>
                     <a href='deletesingle.php?id={$row['id']}' class='btn btn-danger btn-sm'>Delete</a>
