@@ -28,10 +28,25 @@
                         <a href="ex3.php">Exercise3</a>
                         <a href="ex4.php">Exercise4</a>
                         <a href="">Exercise5</a>
-                        <a href="">Exercise7</a>
+                        <a href="../crud/index.php">Exercise7</a>
                     </nav>
                 </header>
             </div>
         </div>
+
+        <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+                <div class="position-sticky">
+                   
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../crud/index.php">Create Data</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../crud/read.php">Read Data</a>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </nav>
 
         
