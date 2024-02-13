@@ -17,7 +17,7 @@ include 'db.php' ;
 
 $sql = "insert into studentsinfo(first_name,last_name,groupid,city)
 
-values ('$fname','$lname','$city','$groupid')";
+values ('$fname','$lname','$city','$groupid');";
 
 
 if($conn->query($sql)== TRUE){
